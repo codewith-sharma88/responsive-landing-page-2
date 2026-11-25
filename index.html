@@ -1,0 +1,156 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew & Bliss | Coffee House</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Brew <span>& Bliss.</span></a>
+
+            <button class="menu-toggle" id="menu-toggle"
+                aria-label="Toggle navigation" aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Our Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="tagline">FRESHLY BREWED EVERY DAY</p>
+
+            <h1>Start Your Day<br>
+                With <span>Good Coffee.</span>
+            </h1>
+
+            <p>
+                Life begins after coffee! Enjoy freshly brewed
+                coffee, delicious flavours and peaceful moments
+                at Brew & Bliss.
+            </p>
+
+            <a href="#menu" class="btn">Explore Our Menu</a>
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=900"
+                alt="Freshly brewed cup of coffee">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-image">
+            <img
+                src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=900"
+                alt="Cozy coffee shop interior">
+        </div>
+
+        <div class="about-content">
+            <p class="tagline">ABOUT OUR CAFE</p>
+            <h2>A Little Coffee,<br> A Lot of Happiness.</h2>
+            <p>
+                At Brew & Bliss, we believe every cup tells a story.
+                We bring you quality coffee, fresh ingredients and
+                a comfortable place to relax with friends.
+            </p>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <p class="tagline">OUR SPECIALITIES</p>
+        <h2>Explore Our Menu</h2>
+
+        <div class="menu-container">
+
+            <div class="menu-card">
+                <img
+                    src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600"
+                    alt="Cappuccino">
+                <h3>Cappuccino</h3>
+                <p>Rich espresso with creamy milk foam.</p>
+                <h4>₹149</h4>
+                <button class=""order-btn
+                onclick="addToOrder('Cappuccino', 149)">
+             Add to Order
+            </button>
+            </div>
+
+            <div class="menu-card">
+                <img
+                    src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=600"
+                    alt="Iced coffee">
+                <h3>Iced Coffee</h3>
+               
+                <p>Refreshing chilled coffee for every mood.</p>
+               
+                <h4>₹129</h4>
+             <button class=""order-btn
+                onclick="addToOrder('Iced Coffee', 129)">
+             Add to Order
+             </button>
+            </div>
+
+            <div class="menu-card">
+                <img
+                    src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?w=600"
+                    alt="Latte">
+                <h3>Cafe Latte</h3>
+                <p>Smooth espresso blended with steamed milk.</p>
+                <h4>₹159</h4>
+                <button class=""order-btn
+                onclick="addToOrder('Cafe Latte', 159)">
+             Add to Order
+             </button>
+            </div>
+
+        </div>
+    </section>
+    <!-- ORDER SECTION -->
+<section class="order-section" id="order">
+    <h2>Your Order</h2>
+
+    <div id="order-items">
+        <p>Your cart is empty!</p>
+    </div>
+
+    <h3 id="total-price">Total: ₹0</h3>
+
+    <button class="btn" onclick="placeOrder()">
+        Place Order
+    </button>
+</section>
+
+
+    <!-- Contact / CTA -->
+    <section class="cta" id="contact">
+        <h2>Your Perfect Coffee Moment Awaits!</h2>
+        <p>Visit us and make your day a little more special.</p>
+        <a href="mailto:hello@brewandbliss.example" class="btn">
+            Contact Us
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Brew & Bliss. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
